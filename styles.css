@@ -332,8 +332,9 @@ textarea { min-height: 130px; resize: vertical; }
   .hero .wrap, .hero3d .wrap, .service-detail, .contact-grid, .site-footer .wrap { grid-template-columns: minmax(0, 1fr); }
   .hero { background: var(--blue-deep); }
   .hero3d { display: flex; flex-direction: column; }
-  .hero3d .wrap { min-height: 0; padding-block: 36px 0; }
-  .hero-scene { position: relative; inset: auto; order: 2; height: min(72vw, 480px); }
+  .hero3d .wrap { width: 100%; min-height: 0; padding-block: 36px 0; }
+  .hero-scene { position: relative; inset: auto; order: 2; height: min(62vw, 440px); margin-top: 28px; }
+  body.fluid .hero3d + section { padding-top: 16px; }
   .trade { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .trade:nth-child(even) .trade-scene { order: 0; }
   /* Phones: number and title first, then the scene, then the text */
