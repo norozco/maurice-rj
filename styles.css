@@ -193,7 +193,7 @@ p { margin: 0; max-width: 65ch; }
 .trades-title h2 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 0.95; text-wrap: balance; }
 .trades-title .accent { display: block; color: var(--blue); }
 .trades-title .outline { color: transparent; -webkit-text-stroke: 2px var(--blue); }
-.trades-lead { font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.5; max-width: 40ch; }
+.trades-lead { font-size: clamp(1.1rem, 1.6vw, 1.3rem); line-height: 1.55; max-width: 46ch; }
 .trade { scroll-margin-top: 96px; }
 
 /* Numbered trade rows with their own small scenes, alternating sides */
