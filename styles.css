@@ -336,6 +336,13 @@ textarea { min-height: 130px; resize: vertical; }
   .hero-scene { position: relative; inset: auto; order: 2; height: min(72vw, 480px); }
   .trade { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .trade:nth-child(even) .trade-scene { order: 0; }
+  /* Phones: number and title first, then the scene, then the text */
+  .trade-copy { display: contents; }
+  .trade > * { justify-self: start; }
+  .trade .trade-num { order: 1; }
+  .trade .trade-copy > h2 { order: 2; }
+  .trade .trade-scene, .trade:nth-child(even) .trade-scene { order: 3; justify-self: stretch; }
+  .trade .trade-copy > :not(.trade-num):not(h2) { order: 4; }
   .header-phone span { display: none; }
 }
 @media (max-width: 640px) {

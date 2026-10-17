@@ -733,7 +733,7 @@
   // ======================= Mounting, fitting, shared loop =======================
   const live = [];
   let tiltTarget = 0;
-  window.addEventListener('pointermove', e => { tiltTarget = ((e.clientX / window.innerWidth) - 0.5) * 0.22; }, { passive: true });
+  window.addEventListener('pointermove', e => { if (e.pointerType !== 'mouse') return; tiltTarget = ((e.clientX / window.innerWidth) - 0.5) * 0.22; }, { passive: true });
 
   function mount(host) {
     const build = BUILDERS[host.dataset.scene];
@@ -791,11 +791,12 @@
       let x0 = 0.04, x1 = 0.96, y0 = 0.06, y1 = 0.94;
       if (api.hero) {
         if (w > 900) { x0 = 0.42; x1 = 1.03; y0 = 0.04; y1 = 0.96; }  // big scene on the right, running off the edge
-        else { x0 = -0.02; x1 = 1.06; y0 = 0.02; y1 = 0.98; }
+        else { x0 = 0.03; x1 = 0.97; y0 = 0.03; y1 = 0.97; }  // phones: whole yard, centered
       }
       let fw = sw / (x1 - x0), fh = fw / aspect;
       if (sh / (y1 - y0) > fh) { fh = sh / (y1 - y0); fw = fh * aspect; }
-      const left = minX - x0 * fw;
+      // The wide hero hugs the right edge; everything else is centered in its box
+      const left = api.hero && w > 900 ? minX - x0 * fw : (minX + maxX) / 2 - fw / 2 + (0.5 - (x0 + x1) / 2) * fw;
       const cy = (minY + maxY) / 2 + (0.5 - (y0 + y1) / 2) * fh;
       Object.assign(camera, { left, right: left + fw, top: cy + fh / 2, bottom: cy - fh / 2 });
       camera.updateProjectionMatrix();
