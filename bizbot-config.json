@@ -1,0 +1,65 @@
+{
+  "id": "maurice-rj",
+  "brand": {
+    "name": "Maurice RJ",
+    "tagline": "Landscaping, concrete, repairs and snow removal",
+    "accentColor": "#0b5ed7",
+    "assistantName": "Maurice RJ Assistant",
+    "avatar": "🛠️",
+    "greeting": "Hi! I'm the Maurice RJ assistant. I can help you get a quote, tell you about our services, or answer a question. Se habla español.",
+    "teaser": "Need a quote? Tap to chat",
+    "theme": "dark"
+  },
+  "contact": {
+    "phone": "(815) 289-1149",
+    "email": "mauricelawncare815@gmail.com",
+    "address": "Based in Rockford, IL"
+  },
+  "hours": {
+    "Towns": "Rockford, Loves Park, Machesney Park, Roscoe, Rockton, Cherry Valley",
+    "Quotes": "Call or text anytime to set up a time",
+    "Languages": "English and Español"
+  },
+  "labels": {
+    "hoursButton": "📍 Service area & contact",
+    "hoursIntro": "Here's where we work and how to reach us:",
+    "servicesIntro": "Here's what we do. Tap one to learn more:"
+  },
+  "booking": false,
+  "quote": {
+    "label": "📝 Get a quote",
+    "text": "Tell Maurice about the job and he'll send you a written proposal with the price before any work starts. How would you like to reach him?",
+    "actions": [
+      { "label": "📞 Call (815) 289-1149", "href": "tel:+18152891149" },
+      { "label": "💬 Send a text", "href": "sms:+18152891149" },
+      { "label": "📝 Fill out the quote form", "href": "contact.html" }
+    ]
+  },
+  "services": [
+    { "id": "landscaping", "name": "Landscaping", "durationMinutes": 0, "description": "Weekly mowing and trimming, edging, fertilizer and weed control, bush and hedge trimming, mulch, sod, planting, and spring and fall clean-ups." },
+    { "id": "concrete", "name": "Concrete", "durationMinutes": 0, "description": "New sidewalks, driveways, patios and stoops, curb cut repair, pavers and retaining walls. Old concrete removed and hauled away." },
+    { "id": "repairs", "name": "Construction & repairs", "durationMinutes": 0, "description": "Soffit, siding and trim, rotten board replacement, drywall and painting, laminate flooring, tubs and showers, fences, decks, doors, lights and faucets." },
+    { "id": "snow", "name": "Snow removal", "durationMinutes": 0, "description": "Driveway and lot plowing, sidewalk clearing and salting, by the storm or on a seasonal contract, with clear pricing by snowfall." }
+  ],
+  "faq": [
+    { "q": "How do I get a quote or estimate price?", "a": "Call or text (815) 289-1149, or fill out the quote form on the Contact page. Maurice will get back to you with a written proposal and the price before any work starts." },
+    { "q": "What areas towns do you serve work in?", "a": "We work in Rockford, Loves Park, Machesney Park, Roscoe, Rockton and Cherry Valley. Outside those towns? Call or text (815) 289-1149 and ask." },
+    { "q": "Do you do snow removal plowing salting?", "a": "Yes. We plow driveways and lots, clear sidewalks and put down salt. You can pay by the storm or get a seasonal contract, priced by snowfall: 2 to 4 inches, 4 to 7 inches and 7 to 10 inches." },
+    { "q": "Do you work with HOAs condo townhome associations property managers commercial?", "a": "Yes. We do seasonal contracts for associations: mowing, fertilizer, shrubs, mulch, gutters and snow removal on one monthly price, with written proposals for your board." },
+    { "q": "Do you pour concrete sidewalks driveways patios?", "a": "Yes. We pour new sidewalks, driveways, patios and stoops, repair curb cuts, and remove and haul away old concrete." },
+    { "q": "Do you do repairs inside the house drywall painting flooring bathroom?", "a": "Yes. Drywall and patching, painting, laminate flooring, tubs and showers, doors, lights, faucets and toilets. Call or text to describe the job." },
+    { "q": "Hablan espanol? Do you speak Spanish?", "a": "Sí. Maurice habla español. Llame o mande texto al (815) 289-1149." },
+    { "q": "How do I pay checks payment?", "a": "Checks are made payable to Raul M Rodriguez. Payment terms are written on your proposal or invoice." }
+  ],
+  "fallbackAnswer": "Good question. Maurice can answer that one best. Call or text {phone}, or tap \"Get a quote\" in the menu.",
+  "recommendations": [],
+  "scheduling": {
+    "slotMinutes": 60,
+    "openWeekdays": [1, 2, 3, 4, 5],
+    "dayStartHour": 8,
+    "dayEndHour": 17,
+    "bookingHorizonDays": 14,
+    "timezoneLabel": "local time"
+  },
+  "aiAvailable": true
+}
